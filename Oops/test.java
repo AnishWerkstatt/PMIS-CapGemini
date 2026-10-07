@@ -1,28 +1,52 @@
 package Oops;
 
-public class test {
-    public static void main(String[] args){
-        Stu s1 = new Stu();
-        Stu s2 = new Stu();
-        s1.name = "Anish";
-        s2.name = "Olise";
-        
-        s1.markAttendance();
-        s2.markAttendance();
+class BankAccount{
+    String AccountHolder;
+    double Balance;
+
+    BankAccount(String AccountHolder, double Balance){
+        this.AccountHolder = AccountHolder;
+        this.Balance = Balance;
     }
-    
+
+
+
+    void deposit(double amount){
+        Balance += amount;
+        System.out.println("Deposited: "+ amount);
+        System.out.println("balance: "+ Balance);
+
+
+    }
+    void withdraw(double amount){
+        if(amount<=Balance){
+            Balance -= amount;
+            System.out.println("Withdrawal amount: " + amount);
+            System.out.println("Balance: "+ Balance);
+        }
+        else{
+            System.out.println("Current Balance: "+Balance);
+            System.out.println("Insufficient Balance.");
+        }
+
+
+    }
+    void displaySummary(){
+        System.out.println("Name: " + AccountHolder);
+        System.out.println("Balance: "+ Balance);
+
+    }
+
 }
 
-class Stu{
-    String name;
-    int rollNumber;
-    int age;
-    String college;
+public class test{
+    public static void main(String[] args){
+        BankAccount b1 = new BankAccount("Anish Korade",42030 );
 
-    void printDet(){
-        System.out.println(name + "\n" + rollNumber + "\n" + college + "\n" +age);
-    }
-    void markAttendance(){
-        System.out.println(name + " has marked the attendance.");
+        b1.displaySummary();
+        b1.deposit(10000);
+        b1.withdraw(1000);
+        
+
     }
 }
