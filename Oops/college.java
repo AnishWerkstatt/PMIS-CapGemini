@@ -1,9 +1,9 @@
 package Oops;
-class Student{
+public class College{
     public static void main(String[] args){
 
-        College s1 = new College();
-        College s2 = new College();
+        Student s1 = new Student();
+        Student s2 = new Student();
 
         s1.name = "Anish";
         s2.name = "Harry Kane";
@@ -25,7 +25,7 @@ class Student{
 
 }
 
-class College{
+class Student{
     String name;
     int age;
     int rollNumber;
