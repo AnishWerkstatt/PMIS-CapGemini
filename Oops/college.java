@@ -1,44 +1,44 @@
 package Oops;
-public class college{
+class Student{
     public static void main(String[] args){
-        Student s1 = new Student();
-        Student s2 = new Student();
+
+        College s1 = new College();
+        College s2 = new College();
 
         s1.name = "Anish";
+        s2.name = "Harry Kane";
         s1.age = 22;
-        s1.rollNumber = 100;
-        s1.college = "NMIMS";
-
-        s2.name = "Malay";
-        s2.age = 22;
-        s2.rollNumber = 101;
-        s2.college = "NMIMS";
+        s2.age=25;
+        s1.rollNumber = 20;
+        s2.rollNumber = 21;
+        s1.college = "TU Darmstadt";
+        s2.college = "Uni of Bonn";
 
         s1.markAttendance();
-        s1.print();
         s2.markAttendance();
-        s2.print();
 
-
-
+        s1.printStudentData();
+        s2.printStudentData();
 
     }
 
+
 }
 
-class Student{
+class College{
     String name;
     int age;
     int rollNumber;
     String college;
 
-
     void markAttendance(){
         System.out.println("Attendance marked by " + name);
+
     }
 
-    void print(){
-        System.out.println(name +", "+age+", "+rollNumber+", "+college);
+    void printStudentData(){
+        System.out.println(name + "\n"+age+"\n"+rollNumber+"\n"+college);
     }
+
 
 }
