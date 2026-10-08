@@ -1,8 +1,8 @@
 // Car class.
 
 package Oops;
-/* 
-class Car{
+
+/*class Car{
     String brand;
     String color;
     int speed;
@@ -35,7 +35,7 @@ public class constructor_questions {
     }
 
 }
-*/
+
 
 // Bank Account management system.
 
@@ -233,3 +233,4 @@ public class constructor_questions {
         student2.printReportCard();
     }
 }
+
