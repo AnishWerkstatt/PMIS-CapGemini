@@ -101,10 +101,10 @@ public class constructor_questions {
         account.displaySummary();
     }
 }
-    */
+*/
 // Problem 1: The Campus Coffee Cart Wallet
 
-/* class CoffeeWallet {
+class CoffeeWallet {
 
     // Attributes
     String customerName;
@@ -167,7 +167,7 @@ public class constructor_questions {
         wallet.displayOverview();
     }
 }
-    */
+
 
 // Problem 2: The Academy Admissions Portal
 class StudentProfile {

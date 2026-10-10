@@ -2,8 +2,10 @@ package Oops;
 
 // Parent Class (Superclass)
 class Vehicle {
+    // ttribute
     String brand;
 
+    // method
     void startEngine() {
         System.out.println(brand + " engine started.");
     }
@@ -21,7 +23,7 @@ class Bike extends Vehicle {
 public class inheritance {
     public static void main(String[] args) {
         Bike myBike = new Bike();
-        myBike.brand = "BMW";     // Inherited from Vehicle
+        myBike.brand = "shine";     // Inherited from Vehicle
         myBike.startEngine();        // Inherited from Vehicle
         myBike.kickStand();          // Bike's own method
     }
