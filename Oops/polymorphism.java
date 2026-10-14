@@ -2,7 +2,7 @@ package Oops;
 
 //compiletime
 
-class Calculator {
+/*class Calculator {
     int add(int a, int b) {
         return a + b;
     }
@@ -52,3 +52,4 @@ public class polymorphism {
         pet3.makeSound();
     }
 }
+    */
