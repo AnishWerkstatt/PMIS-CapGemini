@@ -1,0 +1,26 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.import.maven.enabled": true,
+    "java.project.sourcePaths": [
+        "01-first-test/src/main/java",
+        "02-assertions/src/main/java",
+        "03-lifecycle/src/main/java",
+        "04-parameterized-tests/src/main/java",
+        "05-nested-tests/src/main/java",
+        "06-advanced-tests/src/main/java"
+    ],
+    "java.project.testSourcePaths": [
+        "01-first-test/src/test/java",
+        "02-assertions/src/test/java",
+        "03-lifecycle/src/test/java",
+        "04-parameterized-tests/src/test/java",
+        "05-nested-tests/src/test/java",
+        "06-advanced-tests/src/test/java"
+    ],
+    "java.configuration.maven.lifecycle": {
+        "default": [
+            "validate",
+            "compile"
+        ]
+    }
+}
