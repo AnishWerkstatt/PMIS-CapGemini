@@ -12,5 +12,8 @@ class GreetingTest {
         String result = greeting.sayHello("Ada");
 
         assertEquals("Hello, Ada!", result);
+        //Assertions.assertEquals("Hello, Ada!", result); -- Without a Static Import.
+        
+
     }
 }
