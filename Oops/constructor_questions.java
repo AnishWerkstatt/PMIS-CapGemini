@@ -144,7 +144,7 @@ class CoffeeWallet {
 }
 
 
-public class constructor_questions {
+class CoffeeWalletDemo {
 
     public static void main(String[] args) {
 
@@ -233,4 +233,3 @@ public class constructor_questions {
         student2.printReportCard();
     }
 }
-
