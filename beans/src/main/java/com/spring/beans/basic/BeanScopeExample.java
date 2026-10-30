@@ -44,9 +44,9 @@ public class BeanScopeExample {
 			// "==" compares object identity: whether both variables point
 			// to the exact same object in memory.
 			System.out.println("Singleton objects are the same: "
-					+ (firstSingleton == secondSingleton));
+					+ (firstSingleton == secondSingleton)+ "\nFirst: " + firstSingleton + "\nSecond: " + secondSingleton);
 			System.out.println("Prototype objects are the same: "
-					+ (firstPrototype == secondPrototype));
+					+ (firstPrototype == secondPrototype) + "\nFirst: " + firstPrototype + "\nSecond: " + secondPrototype);
 		}
 	}
 }
