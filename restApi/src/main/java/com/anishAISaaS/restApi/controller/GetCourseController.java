@@ -21,12 +21,14 @@ public class GetCourseController {
 
     private final CourseService courseService;
 
-    public GetCourseController(CourseService courseService) {
+    public GetCourseController(CourseService courseService)
+    {
         this.courseService = courseService;
     }
 
     @GetMapping("/{courseId}")
-    public ResponseEntity<Course> getCourse(@PathVariable Long courseId) {
+    public ResponseEntity<Course> getCourse(@PathVariable Long courseId)
+    {
         Course course = courseService.getCourseById(courseId);
 
         if (course == null) {

@@ -20,12 +20,14 @@ public class GetAllCoursesController {
 
     private final CourseService courseService;
 
-    public GetAllCoursesController(CourseService courseService) {
+    public GetAllCoursesController(CourseService courseService)
+    {
         this.courseService = courseService;
     }
 
     @GetMapping
-    public List<Course> getAllCourses() {
+    public List<Course> getAllCourses()
+    {
         return courseService.getAllCourses();
     }
 }

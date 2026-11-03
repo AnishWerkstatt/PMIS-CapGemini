@@ -20,24 +20,32 @@ public class CourseRepository {
     private final Map<Long, Course> courses = new ConcurrentHashMap<>();
 
     public CourseRepository() {
-        courses.put(1L, new Course(1L, "Java", "Learn the Java programming language"));
-        courses.put(2L, new Course(2L, "Spring Boot", "Build REST APIs with Spring Boot"));
+        courses.put(1L,
+                new Course(1L, "Java",
+                        "Learn the Java programming language"));
+        courses.put(2L, new Course(2L,
+                "Spring Boot",
+                "Build REST APIs with Spring Boot"));
     }
 
-    public List<Course> findAll() {
+    public List<Course> findAll()
+    {
         return new ArrayList<>(courses.values());
     }
 
-    public Course findById(Long id) {
+    public Course findById(Long id)
+    {
         return courses.get(id);
     }
 
-    public Course save(Course course) {
+    public Course save(Course course)
+    {
         courses.put(course.getId(), course);
         return course;
     }
 
-    public void deleteById(Long id) {
+    public void deleteById(Long id)
+    {
         courses.remove(id);
     }
 }
